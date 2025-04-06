@@ -1,0 +1,87 @@
+/* Debug styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  background: #333; /* Debug background */
+}
+
+/* Debug mode indicator */
+.debug-mode::after {
+  content: 'DEBUG';
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 5px;
+  background: red;
+  color: white;
+  font-size: 12px;
+}
+
+/* Main container */
+.app-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  background: #222; /* Debug background */
+}
+
+/* Game container */
+.game-container {
+  flex: 1;
+  background: #000;
+  border: 2px solid red; /* Debug border */
+}
+
+.game-canvas {
+  width: 100%;
+  height: 100%;
+}
+
+/* Text interface */
+.text-container {
+  width: 400px;
+  background: #1a1a1a;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid blue; /* Debug border */
+}
+
+.message-log {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+  border: 1px solid green; /* Debug border */
+}
+
+.message {
+  margin-bottom: 10px;
+  font-family: monospace;
+}
+
+.input-area input {
+  width: 100%;
+  padding: 10px;
+  background: #2a2a2a;
+  border: 1px solid #3a3a3a;
+  color: #fff;
+  font-family: monospace;
+}
+
+.input-area input:focus {
+  outline: none;
+  border-color: #4a4a4a;
+} 

@@ -1,0 +1,30 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+
+# Your rule content
+
+- You can @ files here
+- You can use markdown but dont have to
+
+you must always follow these files:
+[GAME_RULES.md](mdc:docs/GAME_RULES.md)
+[IMPLEMENTATION.md](mdc:docs/IMPLEMENTATION.md)
+[DONJON_GUIDE.md](mdc:docs/DONJON_GUIDE.md)
+[STACK.md](mdc:docs/STACK.md)
+[VISION.md](mdc:docs/VISION.md)
+
+Changes should be tested (manual testing is fine) and an easy to remove debug information log added to all code (the debug info will be removed later so it has to be easy to remove) this will helps speed up testing and development.
+
+in the foloder changelog/ you will create an md file named [DATE].md with contents as follows:
+
+[TIME]
+[SummaryOfChanges]
+
+and this will be updated with every change! until the next date is reached (then a new file should be created with changes for that day and so on):
+
+
+
+
